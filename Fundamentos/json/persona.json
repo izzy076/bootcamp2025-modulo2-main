@@ -1,0 +1,11 @@
+{
+    "id" : 1,
+    "nombre": "Isabella Niño",
+    "edad": 18,
+    "direccion": {
+        "ciudad": "Bogotá",
+        "pais": "Colombia"
+    },
+    "hobbies" : ["cocinar", "nadar", "pintar"],
+    "esCascada": false
+}
