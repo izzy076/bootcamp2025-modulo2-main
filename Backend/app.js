@@ -32,6 +32,13 @@ app.use("/users", userRouter);
 app.use("/uploads", express.static(path.join(_dirname, "src/uploads")));
 app.use("/login", loginRouter);
 
+// Servir su frontend
+app.use(express.static(path.join(_dirname, "dist", "Frontend", "browser")));
+
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(_dirname, "dist", "Frontend", "browser", "index.html")); //archivo puerta de entrada
+});
+
 // 4. Levantar el servidor //3000, 9000
 app.listen(port, ()=>{
   console.log(`El servidor está ejecutándose en http://localhost:${port}`)
