@@ -21,9 +21,9 @@ const _filename = fileURLToPath(import.meta.url); // _filename = backend/app.js
 const _dirname = path.dirname(_filename); // _dirname = backend
 
 // 3. Funcionalidades que necesite agregar
-app.get("/",(req,res)=>{
-  res.send("Server works!")
-});
+// app.get("/",(req,res)=>{
+//   res.send("Server works!")
+// });
 
 app.use(cors()); // habilita CORS
 app.use(express.json()); // es para usar formato json
